@@ -25,7 +25,7 @@ public class Practica2ED {
             } catch (IOException e){
             System.out.println("error");
             
-        }
+            }
     
     
         try(FileWriter myWriter = new FileWriter("C:\\Users\\UTPL\\Desktop\\algo\\estudiantes.txt",true)) {
@@ -39,12 +39,12 @@ public class Practica2ED {
         }catch(IOException e){
     
             System.out.println("Error de escritura");
-        
-            //Leemos el archivo 
-        
-            System.out.println("Leemos el archivo");
             
         }
+        
+        //Leemos el archivo 
+        
+        System.out.println("Leemos el archivo\");
         
         try(FileReader myReader = new FileReader ("C:\\Users\\UTPL\\Desktop\\algo\\estudiantes.txt")){
             int i;

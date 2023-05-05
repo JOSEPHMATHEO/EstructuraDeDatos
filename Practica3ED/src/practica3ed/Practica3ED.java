@@ -11,7 +11,7 @@ public class Practica3ED {
         
         // Conttrol de excepciones
         
-        /**try{
+        try{
             
             File file = new File("C:\\Estructura de Datos Practicas\\NewFilePracttice");
            
@@ -46,7 +46,7 @@ public class Practica3ED {
                 
                 System.out.println("Error de escritura" + e.getMessage());
             
-        }**/
+        }
         
         try {
             
