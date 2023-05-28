@@ -30,7 +30,7 @@ public class Ordenamiento {
             
             while(izq != der){
                 
-                while(numeros[der] >= numeros[pivote] && izq<der)
+                while(numeros[der] >= numeros[pivote] && izq < der)
                     
                 der--;
                 
@@ -61,7 +61,7 @@ public class Ordenamiento {
            
         return numeros;
        
-       return numeros; 
+        return numeros; 
        
       }
     

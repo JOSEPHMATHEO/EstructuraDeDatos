@@ -24,12 +24,25 @@ public class AlgoritmoQuickSort {
        
     }
     
+    public static void quickSort(int arr[], int izq1, int der1){
     
-    public static int quickSort1(int A[], int izq, int der) {
+    
+        if(izq1 < der1){
+        
+            int indexQuickSort = ordenamiento(arr,izq1,der1);
+            quickSort(arr,izq1,indexQuickSort);
+            quickSort(arr,indexQuickSort + 1, der1);
+        
+        }
+    
+    }
+    
+    
+    public static int ordenamiento(int A[], int izq, int der) {
     
         // Elejimos el elemento que sera nuestro pivote 
         
-        int pivote= A[izq]; 
+        int pivote = A[izq];
         
         // Cilco de comparacion 
         
@@ -59,7 +72,7 @@ public class AlgoritmoQuickSort {
         
             if (izq >= der){
                 
-                // Se empieza a dividir el arreglo desde la el indice donde se detuvo
+                // Se empieza a dividir el arreglo desde el indice donde se detuvo
                 // y se comienza a ordenar los elementos 
                 
                 return der;
@@ -67,7 +80,7 @@ public class AlgoritmoQuickSort {
             }else{
             
             // Si el elemento de la izquiera no supera o es igual a elemento de la derecha
-            // significa que los elementos no estan en orden, por lo tnato se los 
+            // significa que los elementos no estan en orden, por lo tanto se los 
             // intercambiaran
             
                 int aux = A[izq];
@@ -86,19 +99,5 @@ public class AlgoritmoQuickSort {
         }
         
     }
-    
-    public static void quickSort(int arr[], int izq1, int der1){
-    
-    
-        if(izq1 < der1){
-        
-            int indexQuickSort = quickSort1(arr,izq1,der1);
-            quickSort(arr,izq1,indexQuickSort);
-            quickSort(arr,indexQuickSort + 1, der1);
-        
-        }
-    
-    }
-    
     
 }

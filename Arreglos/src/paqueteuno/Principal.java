@@ -37,6 +37,7 @@ public class Principal {
         
         eliminarElemnt(array,d);
         presentar(array);
+        
     }
     
     
